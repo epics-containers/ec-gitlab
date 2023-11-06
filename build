@@ -1,10 +1,7 @@
 #!/bin/bash
-
-TARGET_ARCHITECTURE=${1:-linux}
-
 set -xe
 
 cd $(dirname ${0})
 
 # build runtime and developer images
-ec dev build --arch ${TARGET_ARCHITECTURE}
+ec dev build --arch linux --suffix ""
