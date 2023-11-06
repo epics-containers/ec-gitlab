@@ -1,5 +1,6 @@
 # start with the latest podman image
 FROM quay.io/podman/stable AS developer
+# TODO remove above and replace with just runtime (requires a new release of ec)
 FROM developer AS runtime
 
 # add requirements for building Generic IOC containers
