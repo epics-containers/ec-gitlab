@@ -1,5 +1,6 @@
 # start with the latest podman image
-FROM quay.io/podman/stable AS runtime
+FROM quay.io/podman/stable AS developer
+FROM developer AS runtime
 
 # add requirements for building Generic IOC containers
 RUN yum install git -y
