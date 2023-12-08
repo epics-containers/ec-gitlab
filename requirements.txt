@@ -1,1 +1,1 @@
-epics-containers-cli==2.6.3
+epics-containers-cli==2.6.7
